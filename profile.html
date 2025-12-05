@@ -1,0 +1,23 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Perfil - Vistoria</title><link rel="stylesheet" href="styles.css"></head><body>
+<header class="header"><div class="container"><h2 style="margin:0">Perfil</h2></div></header>
+<main class="container">
+  <div style="max-width:700px;margin:18px auto;background:white;padding:18px;border-radius:10px">
+    <div style="display:flex;gap:12px;align-items:center">
+      <img id="profileAvatar" src="./branding/favicon.png" class="avatar" alt="avatar">
+      <div>
+        <div id="usernameDisplay" style="font-weight:700">Usuario: Invitado</div>
+        <div class="small">Pines: <span id="userPinsCount">0</span></div>
+      </div>
+    </div>
+    <hr style="margin:12px 0">
+    <div>
+      <input id="profileName" class="input" placeholder="Nombre de usuario"><br>
+      <input id="avatarFile" type="file" accept="image/*" style="margin-top:8px"><br>
+      <button class="btn" onclick="saveProfile()">Guardar perfil</button>
+    </div>
+  </div>
+</main>
+<script src="app.js"></script>
+<script src="enhancements.js"></script>
+<script>loadProfile();</script>
+</body></html>

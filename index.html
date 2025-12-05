@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Vistoria — Inspírate</title>
+<meta name="description" content="Vistoria - Guarda y comparte ideas visuales. Imágenes, videos y colecciones.">
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="header">
+  <div class="container">
+    <div style="display:flex;align-items:center;justify-content:center;gap:12px">
+      <img src="./branding/logo.png" alt="Vistoria logo" style="height:48px">
+      <h1 style="margin:0;font-size:28px">Vistoria</h1>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+  <div class="topbar">
+    <div class="brand">
+      <img src="./branding/logo.png" alt="logo">
+      <div>
+        <div style="font-weight:700">Vistoria</div>
+        <div class="small">Guarda y comparte tus ideas</div>
+      </div>
+    </div>
+    <div class="controls">
+      <input id="searchInput" class="input" placeholder="Buscar pines..." oninput="searchPins()">
+      <button class="btn" onclick="openUpload()">Subir</button>
+      <button class="btn" onclick="toggleDark()">🌓</button>
+    </div>
+  </div>
+
+  <section id="notifications"></section>
+
+  <section id="grid" class="grid"></section>
+
+  <div class="footer">© 2025 Vistoria — Hecho con ❤️</div>
+</main>
+
+<script src="app.js"></script>
+<script src="i18n.js"></script>
+<script src="enhancements.js"></script>
+<script>loadPins();</script>
+</body>
+</html>

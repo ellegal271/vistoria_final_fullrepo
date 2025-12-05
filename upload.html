@@ -1,0 +1,14 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Subir - Vistoria</title><link rel="stylesheet" href="styles.css"></head><body>
+<header class="header"><div class="container"><h2 style="margin:0">Subir nuevo pin</h2></div></header>
+<main class="container">
+  <div style="max-width:700px;margin:18px auto;background:white;padding:18px;border-radius:10px">
+    <input id="title" class="input" placeholder="Título"><br>
+    <textarea id="description" class="input" placeholder="Descripción" style="width:100%;margin-top:10px"></textarea><br>
+    <input id="imgFile" type="file" accept="image/*,video/*" style="margin-top:10px"><br>
+    <div style="display:flex;gap:8px;margin-top:12px">
+      <button class="btn" onclick="uploadPin()">Subir</button>
+      <a href="index.html"><button class="btn" style="background:#374151">Cancelar</button></a>
+    </div>
+  </div>
+</main>
+<script src="app.js"></script></body></html>
